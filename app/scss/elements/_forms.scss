@@ -1,0 +1,47 @@
+@import "buttons";
+
+legend {
+	border: 0 transparent;
+	font-size: 18px;
+	padding-bottom: $base-spacing/2;
+}
+
+@include respond-to($sm-screen-up) {
+	$fieldset-spacing: $grid-gutter-width;
+
+	fieldset {
+		padding-left: $fieldset-spacing;
+	}
+
+	legend {
+		font-size: 16.5px;
+		font-weight: $font-semi;
+		left: -$fieldset-spacing;
+		margin-right: -$fieldset-spacing;
+		position: relative;
+		width: calc(100% + #{$fieldset-spacing});
+	}
+}
+
+.checkbox.small {
+
+	label {
+		font-size: $font-size-base * .9;
+
+		input[type="radio"],
+		input[type="checkbox"] {
+			margin-top: 3px;
+		}
+	}
+	
+}
+
+.help-block {
+	font-size: 11px;
+	color: $gray-mid;
+}
+
+.form-action {
+	padding-top: $base-spacing * 1.5;
+	text-align: right;
+}

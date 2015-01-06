@@ -1,0 +1,23 @@
+$sm-screen-up: "(min-width: #{$screen-sm-min})";
+$sm-screen-down: "(max-width: #{$screen-sm-min})";
+
+$md-screen-up: "(min-width: #{$screen-md-min})";
+$md-screen-down: "(max-width: #{$screen-md-min})";
+
+$lg-screen-up: "(min-width: #{$screen-lg-min})";
+
+$base-spacing: $line-height-computed;
+$base-line-height: $line-height-base;
+$base-background-color: $gray-subtle;
+
+$sitenav-width: 200px;
+
+/*
+    Fonts
+------------------------------------------------*/
+
+$font-size-xs: 11px;
+
+$font-normal: 400;
+$font-semi: 600;
+$font-bold: 700;

@@ -1,0 +1,47 @@
+.sitenav {
+    margin-bottom: 0; 
+
+    .navbar-brand {
+        img {
+            max-height: 100%;
+        }
+    }
+
+    .navbar-toggle {
+        padding-top: $base-spacing / 3;
+        padding-bottom: $base-spacing / 3;
+
+        &,
+        &:link,
+        &:visited {
+            background: #fff;
+            border-color: $gray-light;
+            color: $gray;
+            font-size: 13px;
+            font-weight: $font-semi;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            background: #eee;
+            border-color: $gray-light;
+        }
+    }
+
+    .navbar-collapse {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+
+
+@include respond-to($sm-screen-up) {
+
+    .sitenav {
+
+
+    }
+
+}

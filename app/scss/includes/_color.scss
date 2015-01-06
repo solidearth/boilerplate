@@ -1,0 +1,29 @@
+$brand-primary-mid: darken($brand-primary, 15);
+$brand-primary-dark: darken($brand-primary, 33);
+
+$brand-alt: #14a476;
+$brand-alt-dark: darken($brand-alt, 15);
+
+$blue: $brand-primary;
+$orange: #f26522;
+$yellow: #f1c40f;
+$green: darken(saturate(mix($brand-alt, yellow, 70), 50), 25);
+
+$gray-mid: lighten($gray-base, 60);
+$gray-subtle: #f6f6f6;
+
+
+// Prop status colors.
+$status-active: #2ecc71;
+$status-closed: #444;
+$status-pending: darken($yellow, 8);
+$status-withdrawn: #9b59b6;
+$status-expired: $orange;
+
+// Social colors.
+$social-facebook: #3b5998;
+$social-twitter: #00aced;
+$social-googleplus: #df4a32;
+$social-youtube: #bb0000;
+
+

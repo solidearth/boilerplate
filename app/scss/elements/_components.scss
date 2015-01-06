@@ -1,0 +1,34 @@
+/*
+Status + Pills
+---------------------------
+*/
+
+.status {
+	@extend .label;
+	font-weight: 600;
+	padding: 1px 3px;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+
+	&--active { background-color: $status-active; }
+	&--closed,
+	&--sold, { background-color: $status-closed; }
+	&--expired { background-color: $status-expired; }
+	&--pending,
+	&--contingent { background-color: $status-pending; }
+	&--withdrawn { background-color: $status-withdrawn; }
+}
+
+
+/*
+	Meta
+---------------------------
+*/
+
+.meta {
+	display: block;
+
+	&--sm {
+		font-size: 11px;
+	}
+}

@@ -1,0 +1,8 @@
+// Media breakpoints.
+@mixin respond-to($mq) {
+
+    @media #{$mq} { 
+        @content; 
+    }
+
+}

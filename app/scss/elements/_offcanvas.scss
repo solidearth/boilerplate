@@ -1,0 +1,50 @@
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+
+ // $offcanvas-columns: 3;
+ // $offcanvas-gutter: $grid-gutter-width;
+ $offcanvas-width: 240px; // percentage(($offcanvas-columns / $grid-columns)) - 5;
+
+ // @include respond-to($md-screen-down) {
+
+    .row-offcanvas {
+        @extend %u-heightFill;
+        position: relative;
+        transition: all .25s ease-in-out;        
+    }
+
+    .row-offcanvas-right {
+        right: 0;
+    }
+
+    .row-offcanvas-left {
+        left: 0;
+    }
+
+    .row-offcanvas-right .sidebar-offcanvas {
+        right: -#{$offcanvas-width};
+    }
+
+    .row-offcanvas-left .sidebar-offcanvas {
+        left: -#{$offcanvas-width};
+    }
+
+    .row-offcanvas-right.active {
+        right: #{$offcanvas-width + 5};
+    }
+
+    .row-offcanvas-left.active {
+        left: #{$offcanvas-width + 5};
+    }
+
+    .sidebar-offcanvas {
+        position: absolute;
+        top: 0;
+        width: #{$offcanvas-width};
+        // padding-left:  ($offcanvas-gutter / 2);
+        // padding-right: ( $offcanvas-gutter / 2);
+    }
+    
+// }

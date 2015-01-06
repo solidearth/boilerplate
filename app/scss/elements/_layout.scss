@@ -1,0 +1,66 @@
+.container-narrow {
+	@include container-fixed;
+}
+
+.page-header {
+	background-color: #fff;
+	margin: 0;
+	margin-bottom: $base-spacing;
+	padding: $line-height-computed/2 $grid-gutter-width/2;
+}
+
+@include respond-to($sm-screen-up) {
+
+	body {
+		max-height: 100%;
+	}
+
+	.container-fluid,
+	.container {
+		padding-left: $grid-gutter-width;
+		padding-right: $grid-gutter-width;
+	}
+
+	.container-narrow {
+		width: $container-sm;
+	}
+
+	.page-header {
+		margin-top: -$line-height-computed;
+		margin-right: -$grid-gutter-width / 2;
+		margin-left: -$grid-gutter-width / 2;
+		margin-bottom: $base-spacing * 1.5;
+
+		padding: $line-height-computed*2 $grid-gutter-width*1.5;
+		width: auto;
+	}
+
+}
+
+
+// Other layout styles.
+.omega-xs {
+	text-align: right;
+}
+
+@include respond-to($sm-screen-up) {
+	.omega-sm {
+		text-align: right;
+	}
+}
+
+@include respond-to($md-screen-up) {
+	.omega-md {
+		text-align: right;
+	}
+}
+
+
+@include respond-to($lg-screen-up) {
+	.omega-lg {
+		text-align: right;
+	}
+}
+
+
+

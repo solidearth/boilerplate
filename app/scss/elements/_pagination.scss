@@ -1,0 +1,13 @@
+// Extra small
+
+.pagination-xs {
+	@include pagination-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $border-radius-small);
+}
+
+@include respond-to($sm-screen-up) {
+
+	.pagination-xs {
+		@include pagination-size($padding-xs-vertical * 3, $padding-xs-horizontal * 1.6, $font-size-xs, $border-radius-small);
+	}
+
+}

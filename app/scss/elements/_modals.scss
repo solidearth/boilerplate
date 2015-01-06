@@ -1,0 +1,45 @@
+
+
+// Backbone-modal
+@import "../../bower_components/backbone-modal/backbone.modal.css";
+@import "../vendor/backbone-modal.theme";
+
+
+// Overrides
+.bbm-wrapper {
+	background: rgba(#000, .45);
+	transition: background-color 0.3s;
+	z-index: 1000;
+}
+
+.bbm-modal {
+	background: white;
+	box-shadow: rgba(#000, .3) 0 10px 20px, rgba(#000, .3) 0 3px 6px;	
+	border-radius: $border-radius-base;
+}
+
+.bbm-modal {
+
+	&__topbar,
+	&__section,
+	&__bottombar {
+		padding: 1em 1.25em;		
+	}
+
+	&__topbar {
+		background-color: $gray-subtle;
+		border-radius: $border-radius-base $border-radius-base 0 0;
+		margin-bottom: 0;
+	}
+
+	&__title {
+		margin: 0;
+		padding: .5em 0;
+	}
+
+	&__bottombar {
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		text-align: right;
+	}
+
+}

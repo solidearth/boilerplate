@@ -1,0 +1,91 @@
+.colgroup-break-right {
+	border-right: 4px solid $gray-lighter;
+	border-right-color: rgba(#000, .03);
+}
+
+.col-em {
+	background-color: $gray-subtle;
+	border-right-color: rgba(#000, .03);
+}
+
+// Standard table.
+
+$cell-padding-h: $grid-gutter-width/2;
+
+.table {
+
+	th,
+	td {
+		font-size: 12px;
+	}
+
+	> thead {
+
+		> tr {
+			> th {
+				border-top: 0;
+				font-size: 11px;
+				text-align: left;
+				white-space: nowrap;
+				padding-left: $cell-padding-h;
+				padding-right: $cell-padding-h;
+			}
+		}
+
+		.tr-titles {
+			> th {
+				border-bottom: 0;
+				color: $gray-mid;
+				font-size: 11px;
+			}
+		}
+	}
+
+	> tbody {
+		> tr {
+			> td {
+				padding-left: $cell-padding-h;
+				padding-right: $cell-padding-h;
+				vertical-align: middle;
+
+				h6,
+				.h6 {
+					margin-bottom: .2em;
+				}
+
+				p {
+					line-height: 1.4;
+					margin-bottom: .2em;
+				}
+
+				.meta {
+					margin-bottom: 4px;
+				}
+
+				&.td-info {
+
+					strong {
+						font-weight: 600;
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+// Hover table
+.table-hover {
+
+	> tbody {
+
+		> tr:hover {
+			background-color: rgba(#000, .03);
+
+		}
+
+	}
+}
+
+
+

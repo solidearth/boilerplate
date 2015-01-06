@@ -1,0 +1,47 @@
+.btn {
+	transition-property: background, border, box-shadow, color;
+	transition-duration: 100ms;
+	outline: none;
+	border-radius: $border-radius-base;
+
+	&,
+	&:hover,
+	&:active,
+	&:focus {
+		text-decoration: none;		
+	}
+
+	&:active {		
+		box-shadow: inset rgba(#000, .2) 0 1px 1px;
+	}
+}
+
+.btn-xs {
+	font-size: $font-size-xs;
+	font-weight: $font-semi;
+	padding: $line-height-computed/4 $grid-gutter-width/4;
+}
+
+.btn-alt {
+	@include button-variant(#fff, $brand-alt, $brand-alt);
+
+	&:focus {
+		background-color: $brand-alt;
+	}
+}
+
+.btn-plain {
+	@include button-variant(#333, #fff, #ccc);
+}
+
+.btn-action {
+	@include button-variant(#fff, $orange, $orange);
+}
+
+.btn-dark {
+	@include button-variant(#fff, $gray-dark, $gray-dark);
+}
+
+.btn-success {
+	@include button-variant(#fff, $green, $green);
+}

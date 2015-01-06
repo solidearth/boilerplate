@@ -1,0 +1,38 @@
+.media {
+
+	.media-left {
+		max-width: 120px;
+	}
+
+	@include respond-to($sm-screen-up) {
+
+		.media-left {
+			max-width: none;
+		}
+
+	}
+}
+
+
+
+/*
+	Thumbs
+ */
+
+ .thumb {
+ 	img {
+ 		max-width: 100%;
+ 	}
+ }
+
+
+ @include respond-to($sm-screen-up) {
+
+ 	.thumb {
+
+ 		&-sm {
+ 			width: 200px;
+ 		}
+ 	}
+
+ }

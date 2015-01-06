@@ -1,0 +1,20 @@
+.avatar {
+	border-radius: $border-radius-base;
+	display: inline-block;
+	vertical-align: middle;
+	height: 70px;
+	width: 70px;
+	overflow: hidden;
+
+	img {
+		display: inline-block;
+		max-width: 100%;
+	}
+
+
+	&-xs {
+		border-radius: $border-radius-base  / 2;
+		height: 20px;
+		width: 20px;
+	}
+}

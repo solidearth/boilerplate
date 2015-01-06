@@ -1,0 +1,55 @@
+/*
+
+    This is where we set overriding variables for Bootstrap.
+    All possible variables can be found here: http://getbootstrap.com/customize
+
+ */
+
+ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+// Colors
+$gray-base: #000;
+$gray: lighten($gray-base, 33.5%);
+$gray-light: lighten($gray-base, 75);
+$gray-lighter: lighten($gray-base, 90);
+
+$brand-primary: saturate(lighten(#263548, 20), 15);
+
+// Typography
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+$font-size-base: 13px;
+$font-size-h1: floor(($font-size-base * 1.7));
+$font-size-h2: floor(($font-size-base * 1.6));
+$font-size-h3: floor(($font-size-base * 1.4));
+$font-size-h4: floor(($font-size-base * 1.25));
+$font-size-h5: floor(($font-size-base * 1.15));
+$font-size-h6: floor(($font-size-base * .9));
+
+// Components
+$border-radius-base: 3px;
+
+// Tables
+$table-border-color: $gray-lighter;
+
+// Forms
+$input-border: $gray-light;
+$input-color: darken($gray, 10);
+$input-color-placeholder: darken($gray-lighter, 10);
+
+
+// Navbar
+$navbar-height: 60px;
+$navbar-border-radius: 0;
+
+$navbar-default-bg: #fff;
+$navbar-default-link-active-bg: transparent;
+
+$navbar-inverse-bg: $brand-primary;
+$navbar-inverse-color: lighten($brand-primary, 45);
+$navbar-inverse-link-color: $navbar-inverse-color;
+$navbar-inverse-link-hover-bg: darken($brand-primary, 5);
+
+// Pagination
+$pagination-active-bg: lighten($gray, 15);
+$pagination-active-border: $gray;
